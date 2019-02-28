@@ -48,7 +48,8 @@ resource "aws_iam_role_policy" "lambda_ebs_backup_policy" {
                 "ec2:CreateTags",
                 "ec2:DeleteSnapshot",
                 "ec2:DescribeInstances",
-                "ec2:DescribeSnapshots"
+                "ec2:DescribeSnapshots",
+                "ec2:DescribeRegions"
             ],
             "Resource": "*"
         }
